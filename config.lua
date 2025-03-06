@@ -11,7 +11,7 @@ vim.opt.relativenumber = true
 
 vim.cmd("set cc=100")
 
-lvim.colorscheme = "lunar"
+lvim.colorscheme = "dracula"
 lvim.builtin.lualine.style = "default"
 lvim.transparent_window = true
 
@@ -45,4 +45,5 @@ lvim.plugins ={
     { "lunarvim/colorschemes" },
     { "folke/tokyonight.nvim" },
     { "shaunsingh/nord.nvim" },
+    { "Mofiqul/dracula.nvim" },
 }
