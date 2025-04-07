@@ -11,7 +11,7 @@ vim.opt.relativenumber = true
 
 vim.cmd("set cc=100")
 
-lvim.colorscheme = "dracula"
+lvim.colorscheme = "sakura"
 lvim.builtin.lualine.style = "default"
 lvim.transparent_window = true
 
@@ -46,4 +46,15 @@ lvim.plugins ={
     { "folke/tokyonight.nvim" },
     { "shaunsingh/nord.nvim" },
     { "Mofiqul/dracula.nvim" },
+    { "rktjmp/lush.nvim" },
+    { "anAcc22/sakura.nvim",
+      dependencies = { "rktjmp/lush.nvim" },
+      name = "sakura",
+      branch = "main",
+      priority = 1000,
+      config = function()
+        vim.opt.background ="dark"
+        vim.cmd("colorscheme sakura")
+      end
+    },
 }
